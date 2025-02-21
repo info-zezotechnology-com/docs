@@ -1,5 +1,5 @@
 ---
-title: Installing an OAuth App in your organization
+title: Installing an OAuth app in your organization
 intro: 'You can install {% data variables.product.prodname_oauth_apps %} from {% data variables.product.prodname_marketplace %} to use in your organization.'
 versions:
   fpt: '*'
@@ -17,7 +17,7 @@ If you choose a paid plan, you'll pay for your app subscription on your organiza
 
 {% data reusables.marketplace.free-trials %}
 
-For more information about installing a {% data variables.product.prodname_github_app %}, see "[AUTOTITLE](/apps/using-github-apps/installing-a-github-app-in-your-organization)."
+For more information about installing a {% data variables.product.prodname_github_app %}, see [AUTOTITLE](/apps/using-github-apps/installing-a-github-app-in-your-organization).
 
 ## Installing an {% data variables.product.prodname_oauth_app %} in your organization
 
@@ -30,9 +30,9 @@ For more information about installing a {% data variables.product.prodname_githu
 {% data reusables.marketplace.confirm-install-account-org %}
 {% data reusables.marketplace.add-payment-method-org %}
 {% data reusables.marketplace.complete-order-begin-installation %}
-8. Review the information about the app's access to your personal account, organizations, and data, then click **Authorize application**.
+1. Review the information about the app's access to your personal account, organizations, and data, then click **Authorize application**.
 
 ## Further reading
 
-- "[AUTOTITLE](/billing/managing-your-github-billing-settings/adding-or-editing-a-payment-method)"
-- "[AUTOTITLE](/apps/oauth-apps/using-oauth-apps/installing-an-oauth-app-in-your-personal-account)"
+* [AUTOTITLE](/billing/managing-your-github-billing-settings/adding-or-editing-a-payment-method)
+* [AUTOTITLE](/apps/oauth-apps/using-oauth-apps/installing-an-oauth-app-in-your-personal-account)
