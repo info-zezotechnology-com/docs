@@ -12,22 +12,20 @@ topics:
 shortTitle: Create a team discussion
 ---
 
-{% ifversion team-discussions-migration %}
 {% data reusables.organizations.team-discussions-migration %}
-{% endif %}
 
-{% data reusables.organizations.team-discussions-permissions %} For more information, see "[AUTOTITLE](/organizations/collaborating-with-your-team/about-team-discussions)."
+{% data reusables.organizations.team-discussions-permissions %} For more information, see [AUTOTITLE](/organizations/collaborating-with-your-team/about-team-discussions).
 
 {% data reusables.profile.access_org %}
 {% data reusables.user-settings.access_org %}
 {% data reusables.organizations.specific_team %}
 {% data reusables.organizations.team-discussions-tab %}
-6. Type a team discussion title and a comment to start a conversation.
-7. Optionally, select whether you want your post to be private or public using the drop-down menu.
-8. Click **Comment**.
+1. Type a team discussion title and a comment to start a conversation.
+1. Optionally, select whether you want your post to be private or public using the drop-down menu.
+1. Click **Comment**.
 
 ## Further reading
 
-- "[AUTOTITLE](/organizations/collaborating-with-your-team/about-team-discussions)"
-- "[AUTOTITLE](/organizations/collaborating-with-your-team/editing-or-deleting-a-team-discussion)"
-- "[AUTOTITLE](/organizations/collaborating-with-your-team/pinning-a-team-discussion)"
+* [AUTOTITLE](/organizations/collaborating-with-your-team/about-team-discussions)
+* [AUTOTITLE](/organizations/collaborating-with-your-team/editing-or-deleting-a-team-discussion)
+* [AUTOTITLE](/organizations/collaborating-with-your-team/pinning-a-team-discussion)

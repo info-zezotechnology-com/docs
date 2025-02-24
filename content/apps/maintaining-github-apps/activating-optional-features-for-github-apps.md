@@ -8,26 +8,23 @@ redirect_from:
   - /apps/maintaining-github-apps/activating-optional-features-for-apps
 versions:
   fpt: '*'
-  ghae: '*'
   ghes: '*'
   ghec: '*'
 topics:
   - GitHub Apps
 shortTitle: Activate optional features
 ---
-{% warning %}
 
-**Warning:**  Optional features are subject to change.
-
-{% endwarning %}
+> [!WARNING]
+> Optional features are subject to change.
 
 ## Activating optional features for {% data variables.product.prodname_github_apps %}
 
 {% data reusables.apps.settings-step %}
 {% data reusables.user-settings.developer_settings %}
-3. Click **Edit** next to the {% data variables.product.prodname_github_app %} you want to enable an optional feature for.
+1. Click **Edit** next to the {% data variables.product.prodname_github_app %} you want to enable an optional feature for.
 {% data reusables.apps.optional_feature_activation %}
 
 ## Further reading
 
-- "[AUTOTITLE](/apps/maintaining-github-apps/modifying-a-github-app)"
+* [AUTOTITLE](/apps/maintaining-github-apps/modifying-a-github-app)

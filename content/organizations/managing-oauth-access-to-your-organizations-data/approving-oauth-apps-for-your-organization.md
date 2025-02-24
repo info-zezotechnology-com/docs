@@ -1,5 +1,5 @@
 ---
-title: Approving OAuth Apps for your organization
+title: Approving OAuth apps for your organization
 intro: 'When an organization member or outside collaborator requests {% data variables.product.prodname_oauth_app %} access to organization resources, organization owners can approve or deny the request.'
 redirect_from:
   - /articles/approving-third-party-applications-for-your-organization
@@ -12,12 +12,11 @@ versions:
 topics:
   - Organizations
   - Teams
-shortTitle: Approve OAuth App access
+shortTitle: Approve {% data variables.product.prodname_oauth_app %} access
 ---
 When {% data variables.product.prodname_oauth_app %} access restrictions are enabled, organization members and outside collaborators must [request approval](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-membership-in-organizations/requesting-organization-approval-for-oauth-apps) from an organization owner before they can authorize an {% data variables.product.prodname_oauth_app %} that has access to the organization's resources.
 
-{% ifversion limit-app-access-requests %}
-{% data reusables.organizations.restricted-app-access-requests %}{% endif %}
+{% data reusables.organizations.restricted-app-access-requests %}
 
 {% data reusables.profile.access_org %}
 {% data reusables.profile.org_settings %}
@@ -27,4 +26,4 @@ When {% data variables.product.prodname_oauth_app %} access restrictions are ena
 
 ## Further reading
 
-- "[AUTOTITLE](/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions)"
+* [AUTOTITLE](/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions)
