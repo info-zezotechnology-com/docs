@@ -19,7 +19,7 @@ redirect_from:
   - /copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-github-copilot-features-in-your-organization/managing-policies-for-copilot-in-your-organization
 topics:
   - Copilot
-shortTitle: Managing policies
+shortTitle: Manage policies
 ---
 
 ## About policies for {% data variables.product.prodname_copilot %}
@@ -32,13 +32,14 @@ Organization owners can set policies to govern how {% data variables.product.pro
   * Image support in {% data variables.product.prodname_copilot_chat_short %} (available in {% data variables.product.prodname_vscode_shortname %} and {% data variables.product.prodname_vs %})
     >[!NOTE] This setting only applies to preview features within {% data variables.product.prodname_copilot_short %} and does not control all preview-related settings in {% data variables.product.prodname_vscode_shortname %}.
 * {% data variables.copilot.copilot_coding_agent %} ({% data variables.release-phases.public_preview %})
+* {% data variables.product.prodname_copilot_spaces %} (public preview)
 * MCP servers on {% data variables.product.prodname_dotcom_the_website %} ({% data variables.release-phases.public_preview %})
 * {% data variables.product.prodname_copilot_mobile_short %}
 * {% data variables.product.prodname_copilot_cli_short %} and {% data variables.product.prodname_windows_terminal %}
 * {% data variables.product.prodname_copilot_desktop_short %} ({% data variables.release-phases.public_preview %})
 * Suggestions matching public code
 * Access to alternative models for {% data variables.product.prodname_copilot_short %}
-  * Anthropic {% data variables.copilot.copilot_claude_sonnet %} in {% data variables.product.prodname_copilot_short %}
+  * Anthropic {% data variables.copilot.copilot_claude %} in {% data variables.product.prodname_copilot_short %}
   * Google {% data variables.copilot.copilot_gemini %} in {% data variables.product.prodname_copilot_short %}
   * OpenAI models in {% data variables.product.prodname_copilot_short %}
 

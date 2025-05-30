@@ -35,6 +35,8 @@ The following models are currently available in the immersive mode of {% data va
 * {% data variables.copilot.copilot_claude_sonnet_35 %}
 * {% data variables.copilot.copilot_claude_sonnet_37 %}
 * {% data variables.copilot.copilot_claude_sonnet_37 %} Thinking
+* {% data variables.copilot.copilot_claude_sonnet_40 %}
+* {% data variables.copilot.copilot_claude_opus %}
 * {% data variables.copilot.copilot_gemini_flash %}
 * {% data variables.copilot.copilot_gemini_25_pro %} (preview)
 * {% data variables.copilot.copilot_o1 %}
@@ -68,8 +70,6 @@ These instructions are for {% data variables.product.prodname_copilot_short %} o
 
 {% vscode %}
 
-Changing the model that's used by {% data variables.product.prodname_copilot_chat_short %} does not affect the model that's used for {% data variables.product.prodname_copilot_short %} code completion. See [AUTOTITLE](/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-code-completion).
-
 > [!NOTE]
 > * Multiple model support in {% data variables.product.prodname_copilot_chat_short %} is in {% data variables.release-phases.public_preview %} and is subject to change.
 > * Support for GPT-4.5 is only available on {% data variables.product.prodname_copilot_pro_plus_short %}{% ifversion copilot-enterprise %} and {% data variables.product.prodname_copilot_enterprise_short %}{% endif %}.
@@ -84,6 +84,8 @@ The following models are currently available through multi-model {% data variabl
 * {% data variables.copilot.copilot_claude_sonnet_35 %}
 * {% data variables.copilot.copilot_claude_sonnet_37 %}
 * {% data variables.copilot.copilot_claude_sonnet_37 %} Thinking
+* {% data variables.copilot.copilot_claude_sonnet_40 %}
+* {% data variables.copilot.copilot_claude_opus %}
 * {% data variables.copilot.copilot_gemini_flash %}
 * {% data variables.copilot.copilot_o1 %}
 * {% data variables.copilot.copilot_o3 %}
@@ -253,6 +255,6 @@ To use multi-model {% data variables.product.prodname_copilot_chat_short %}, you
 ## Further reading
 
 * [AUTOTITLE](/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-code-completion)
-* [AUTOTITLE](/copilot/using-github-copilot/ai-models/using-claude-sonnet-in-github-copilot)
+* [AUTOTITLE](/copilot/using-github-copilot/ai-models/using-claude-in-github-copilot)
 * [AUTOTITLE](/copilot/using-github-copilot/ai-models/using-gemini-in-github-copilot)
 * [AUTOTITLE](/copilot/using-github-copilot/ai-models/choosing-the-right-ai-model-for-your-task)
