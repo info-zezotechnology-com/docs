@@ -13801,6 +13801,14 @@
           "href": "/graphql/reference/scalars#datetime"
         },
         {
+          "name": "duplicateOf",
+          "description": "<p>The issue or pull request that this issue was marked as a duplicate of.</p>",
+          "type": "IssueOrPullRequest",
+          "id": "issueorpullrequest",
+          "kind": "unions",
+          "href": "/graphql/reference/unions#issueorpullrequest"
+        },
+        {
           "name": "id",
           "description": "<p>The Node ID of the ClosedEvent object.</p>",
           "type": "ID!",
@@ -13822,7 +13830,9 @@
           "type": "IssueStateReason",
           "id": "issuestatereason",
           "kind": "enums",
-          "href": "/graphql/reference/enums#issuestatereason"
+          "href": "/graphql/reference/enums#issuestatereason",
+          "isDeprecated": true,
+          "deprecationReason": "<p>The state reason for duplicate issue is now returned by default. Removal on 2025-10-01 UTC.</p>"
         },
         {
           "name": "url",
@@ -16171,7 +16181,7 @@
       "kind": "objects",
       "id": "contributionscollection",
       "href": "/graphql/reference/objects#contributionscollection",
-      "description": "<p>A contributions collection aggregates contributions such as opened issues and commits created by a user.</p>",
+      "description": "<p>A collection of contributions made by a user, including opened issues, commits, and pull requests.\nContributions in private and internal repositories are only included with the optional read:user scope.</p>",
       "fields": [
         {
           "name": "commitContributionsByRepository",
@@ -29174,6 +29184,14 @@
           "href": "/graphql/reference/scalars#int"
         },
         {
+          "name": "duplicateOf",
+          "description": "<p>A reference to the original issue that this issue has been marked as a duplicate of.</p>",
+          "type": "Issue",
+          "id": "issue",
+          "kind": "objects",
+          "href": "/graphql/reference/objects#issue"
+        },
+        {
           "name": "editor",
           "description": "<p>The actor who edited the comment.</p>",
           "type": "Actor",
@@ -29803,7 +29821,9 @@
                 "href": "/graphql/reference/scalars#boolean"
               }
             }
-          ]
+          ],
+          "isDeprecated": true,
+          "deprecationReason": "<p>The state reason for duplicate issue is now returned by default. Removal on 2025-10-01 UTC.</p>"
         },
         {
           "name": "subIssues",
@@ -32681,6 +32701,14 @@
           "name": "login",
           "description": "<p>The username of the actor.</p>",
           "type": "String!",
+          "id": "string",
+          "kind": "scalars",
+          "href": "/graphql/reference/scalars#string"
+        },
+        {
+          "name": "name",
+          "description": "<p>The display name of the imported mannequin.</p>",
+          "type": "String",
           "id": "string",
           "kind": "scalars",
           "href": "/graphql/reference/scalars#string"
@@ -58685,6 +58713,14 @@
           "href": "/graphql/reference/scalars#id"
         },
         {
+          "name": "immutable",
+          "description": "<p>Whether or not the release is immutable.</p>",
+          "type": "Boolean!",
+          "id": "boolean",
+          "kind": "scalars",
+          "href": "/graphql/reference/scalars#boolean"
+        },
+        {
           "name": "isDraft",
           "description": "<p>Whether or not the release is a draft.</p>",
           "type": "Boolean!",
@@ -59028,6 +59064,14 @@
           "id": "datetime",
           "kind": "scalars",
           "href": "/graphql/reference/scalars#datetime"
+        },
+        {
+          "name": "digest",
+          "description": "<p>The SHA256 digest of the asset.</p>",
+          "type": "String",
+          "id": "string",
+          "kind": "scalars",
+          "href": "/graphql/reference/scalars#string"
         },
         {
           "name": "downloadCount",
@@ -89302,7 +89346,7 @@
         },
         {
           "name": "DUPLICATE",
-          "description": "<p>An issue that has been closed as a duplicate. To retrieve this value, set\n<code>(enableDuplicate: true)</code> when querying the stateReason field.</p>"
+          "description": "<p>An issue that has been closed as a duplicate.</p>"
         },
         {
           "name": "NOT_PLANNED",
@@ -89543,6 +89587,10 @@
         {
           "name": "CREATED_AT",
           "description": "<p>Order labels by creation time.</p>"
+        },
+        {
+          "name": "ISSUE_COUNT",
+          "description": "<p>Order labels by issue count.</p>"
         },
         {
           "name": "NAME",
@@ -94710,25 +94758,6 @@
           "name": "Organization",
           "id": "organization",
           "href": "/graphql/reference/objects#organization"
-        },
-        {
-          "name": "User",
-          "id": "user",
-          "href": "/graphql/reference/objects#user"
-        }
-      ]
-    },
-    {
-      "name": "BotOrUser",
-      "kind": "unions",
-      "id": "botoruser",
-      "href": "/graphql/reference/unions#botoruser",
-      "description": "<p>Used when either Bot or User are accepted.</p>",
-      "possibleTypes": [
-        {
-          "name": "Bot",
-          "id": "bot",
-          "href": "/graphql/reference/objects#bot"
         },
         {
           "name": "User",
@@ -106019,6 +106048,15 @@
       "href": "/graphql/reference/input-objects#requestreviewsinput",
       "description": "<p>Autogenerated input type of RequestReviews.</p>",
       "inputFields": [
+        {
+          "name": "botIds",
+          "description": "<p>The Node IDs of the bot to request.</p>",
+          "type": "[ID!]",
+          "id": "id",
+          "kind": "scalars",
+          "href": "/graphql/reference/scalars#id",
+          "isDeprecated": false
+        },
         {
           "name": "clientMutationId",
           "description": "<p>A unique identifier for the client performing the mutation.</p>",
